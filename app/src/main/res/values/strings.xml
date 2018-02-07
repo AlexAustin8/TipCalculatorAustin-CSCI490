@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TipCalculator-counter</string>
+    <string name="ten">10%</string>
+    <string name="fifteen">15%</string>
+    <string name="twenty">20%</string>
+    <string name="twentyfive">25%</string>
+    <string name="thirty">30%</string>
+    <string name="custom">Enter Custom Amount</string>
+    <string name="calc">Calculate!</string>
+    <string name="totHint">Bill Total: </string>
+    <string name="numPeopleHint">Number of People: </string>
+    <string name="tipHint">Enter Tip Amount: </string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="result">Total: $%1$s  Tip: $%2$s  Price Per Person: $%3$s</string>
+    <string name="empty"> </string>
+
+
+</resources>

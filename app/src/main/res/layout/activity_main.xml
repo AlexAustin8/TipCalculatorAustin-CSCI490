@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex.tipcalculator_counter.MainActivity">
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/cust_tip_prompt" />
+
+    <EditText
+        android:id="@+id/total_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/totHint"
+        android:inputType="text"
+        android:lines="4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num_people_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/numPeopleHint"
+        android:inputType="text"
+        android:lines="4"
+        app:layout_constraintTop_toBottomOf="@+id/total_prompt" />
+
+    <EditText
+        android:id="@+id/cust_tip_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tipHint"
+        android:inputType="text"
+        android:lines="4"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/tip_selection" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tip_selection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/num_people_prompt">
+
+        <RadioButton
+            android:id="@+id/ten_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/ten" />
+
+        <RadioButton
+            android:id="@+id/fifteen_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/fifteen" />
+
+        <RadioButton
+            android:id="@+id/twenty_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/twenty" />
+
+        <RadioButton
+            android:id="@+id/twentyfive_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/twentyfive" />
+
+        <RadioButton
+            android:id="@+id/thirty_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/thirty" />
+
+        <RadioButton
+            android:id="@+id/custom_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/custom" />
+    </RadioGroup>
+
+
+
+</android.support.constraint.ConstraintLayout>
